@@ -17,6 +17,7 @@ Run Demo
     $ cd couchdb2-replicator-not-scalable-vagrant
     $ vagrant up
     $ vagrant ssh
+    $ cd /vagrant
     $ npm run demo
       This leads to an internal_server_error because the out-of-the-box config of CouchDB doesn't
       allow for 1,000 concurrent file handles and database connections. Of course, we can tweak
