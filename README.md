@@ -18,4 +18,7 @@ Run Demo
     $ vagrant up
     $ vagrant ssh
     $ npm run demo
-      This leads to an internal_server_error because the out-of-the-box config of CouchDB doesn't allow for 1,000 concurrent file handles and database connections. Of course, we can tweak these values, but this just masks the problem that we are consuming resources by replicating databases that don't have any changes.
+      This leads to an internal_server_error because the out-of-the-box config of CouchDB doesn't
+      allow for 1,000 concurrent file handles and database connections. Of course, we can tweak
+      these values, but this just masks the problem that we are consuming resources by replicating
+      databases that don't have any changes.
