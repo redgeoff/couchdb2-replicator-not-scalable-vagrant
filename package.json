@@ -1,0 +1,24 @@
+{
+  "name": "couchdb2-replicator-not-scalable-vagrant",
+  "version": "0.0.1",
+  "description": "CouchDB Replicator Not Scalable",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/redgeoff/couchdb2-replicator-not-scalable-vagrant"
+  },
+  "keywords": [],
+  "author": "Geoff Cox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redgeoff/couchdb2-replicator-not-scalable-vagrant"
+  },
+  "scripts": {
+    "demo": "./index.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "nano": "^6.2.0"
+  },
+  "devDependencies": {}
+}
