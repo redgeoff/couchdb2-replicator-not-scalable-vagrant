@@ -39,12 +39,19 @@ var createReplicatorDatabases = function (i) {
   });
 };
 
+var createReplicatorDatabasesFactory = function (i) {
+  return function () {
+    return createReplicatorDatabases(i);
+  };
+};
+
 var createDatabases = function () {
-  var promises = [];
+  // Sequentially chain so that we don't exhaust CouchDB resources just setting up demo
+  var chain = Promise.resolve();
   for (i = 0; i < NUM_REPLICATORS; i++) {
-    promises.push(createReplicatorDatabases(i));
+    chain = chain.then(createReplicatorDatabases(i));
   }
-  return Promise.all(promises);
+  return chain;
 };
 
 createDatabases();
