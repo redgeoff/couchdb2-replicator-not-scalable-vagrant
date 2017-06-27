@@ -1,5 +1,7 @@
 # couchdb2-replicator-not-scalable-vagrant
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/redgeoff/couchdb2-replicator-not-scalable-vagrant.svg)](https://greenkeeper.io/)
+
 This project demonstrates how CouchDB's _replicator database consumes resources even when the databases that are being replicated aren't being changed. Assume you have a db-per-user design that requires replication per user. With just say 10,000 users you'll need 10,000 concurrent database connections even though only a fraction of those users will be active simultaneously.
 
 
